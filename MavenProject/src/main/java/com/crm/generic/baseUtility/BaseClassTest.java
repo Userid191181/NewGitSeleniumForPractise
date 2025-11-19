@@ -44,7 +44,7 @@ import com.crm.generic.WebDriverUtility.WebDriverUtility;
 	
 	@BeforeSuite(groups = { "Smoke", "Regression" })
 	public void beforeSuite() throws SQLException {
-		System.out.println("===Connect to DB, Report Config===");
+		System.out.println("===Connect to DB, Report Config===AddedExtra Info for Testing");
 		dLib.getDatabase();
 	}
 

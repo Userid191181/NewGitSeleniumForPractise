@@ -50,7 +50,7 @@ public class ListenerImplementationClass implements ITestListener, ISuiteListene
 	public void onTestStart(ITestResult result)
 	{
         
-		Reporter.log("========" +result.getMethod().getMethodName() +"====START====="); //this will display name of the test case in the console.
+		Reporter.log("========" +result.getMethod().getMethodName() +"====START of  the Script====="); //this will display name of the test case in the console.
 		test= report.createTest(result.getMethod().getMethodName());
 		UtilityClassObject.setTest(test);  
 		test.log(Status.INFO, result.getMethod().getMethodName()+"==> STARTED<==="); //passing statement before start of Test
